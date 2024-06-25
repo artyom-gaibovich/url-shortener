@@ -1,0 +1,50 @@
+# Двоичные файлы программ и плагинов
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Тестовый двоичный файл, созданный с помощью `go test -c`
+*.test
+
+# Результаты работы инструмента покрытия кода Go, особенно при использовании с LiteIDE
+*.out
+
+# Директории зависимостей (уберите комментарий ниже, чтобы включить)
+# vendor/
+
+# Рабочий файл Go
+go.work
+
+# Общие
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Иконка должна заканчиваться двумя \r
+Icon
+
+# Миниатюры
+._*
+
+# Файлы, которые могут появляться в корне тома
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Директории, которые могут создаваться на удалённом AFP-шаре
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.env
+
+# IntelliJ IDEA
+.idea
