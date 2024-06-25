@@ -43,7 +43,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
+./storage/storage.db
 .env
 
 # IntelliJ IDEA
