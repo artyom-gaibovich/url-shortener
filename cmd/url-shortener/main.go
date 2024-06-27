@@ -25,6 +25,11 @@ func main() {
 		os.Exit(1)
 	}
 	_ = storage
+	err = storage.DeleteURL("google")
+	if err != nil {
+		log.Error("failed to delete", sl.Err(err))
+		os.Exit(1)
+	}
 
 	// TODO: init logger : sl
 	// TODO: init storage : sqlite
