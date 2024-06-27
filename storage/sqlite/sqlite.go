@@ -80,14 +80,14 @@ func (s *Storage) DeleteURL(alias string) error {
 	const fn = "storage.sqlite.DeleteURL"
 	stmt, err := s.db.Prepare("DELETE FROM url WHERE alias = ?")
 	if err != nil {
-		return fmt.Errorf("%s: prepare statement: %w", fn, err)
+		return fmt.Errorf("%s: prepare statement : %w", fn, err)
 	}
 	_, err = stmt.Exec(alias)
 	if err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return storage.ErrURLNotFound
 		}
-		return fmt.Errorf("%s: execute statement: %w", fn, err)
+		return fmt.Errorf("%s: execute statement : %w", fn, err)
 	}
 	return nil
 }
